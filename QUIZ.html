@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="QUIZCSS.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <img src="logo.jpg" alt="SanaSarmau Logo" class="navbar-logo">
+          <a class="nav-link active" href="index.html" data-lang="nav_home">Home</a>
+          <a class="nav-link" href="ABOUT.html" data-lang="nav_about">About</a>
+          <a class="nav-link" href="SERVICE.html" data-lang="nav_services">Services</a>
+          <a class="nav-link" href="CONTACT.html" data-lang="nav_contact">Contact</a>
+          <a class="nav-link" href="#" data-lang="nav_quiz">Quiz</a>
+        </ul>
+        <div class="navbar-nav">
+          <select id="languageSwitcher" class="custom-select">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Quiz Content -->
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-5" data-lang="quiz_title">Health Quiz</h2>
+    <form id="quizForm">
+        <div class="quiz-question">
+            <h5 data-lang="quiz_q1">1. How many hours of sleep should an adult get each night?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1a" value="6">
+                <label class="form-check-label" for="q1a" data-lang="quiz_q1_a1">6 hours</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1b" value="7-9">
+                <label class="form-check-label" for="q1b" data-lang="quiz_q1_a2">7-9 hours</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1c" value="10">
+                <label class="form-check-label" for="q1c" data-lang="quiz_q1_a3">10 hours</label>
+            </div>
+        </div>
+
+        <div class="quiz-question">
+            <h5 data-lang="quiz_q2">2. Which vitamin is known as the sunshine vitamin?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2a" value="Vitamin A">
+                <label class="form-check-label" for="q2a" data-lang="quiz_q2_a1">Vitamin A</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2b" value="Vitamin B">
+                <label class="form-check-label" for="q2b" data-lang="quiz_q2_a2">Vitamin B</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2c" value="Vitamin D">
+                <label class="form-check-label" for="q2c" data-lang="quiz_q2_a3">Vitamin D</label>
+            </div>
+        </div>
+
+        <div class="quiz-question">
+            <h5 data-lang="quiz_q3">3. How much water should an adult drink each day?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3a" value="1 liter">
+                <label class="form-check-label" for="q3a" data-lang="quiz_q3_a1">1 liter</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3b" value="2 liters">
+                <label class="form-check-label" for="q3b" data-lang="quiz_q3_a2">2 liters</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3c" value="3 liters">
+                <label class="form-check-label" for="q3c" data-lang="quiz_q3_a3">3 liters</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-3" onclick="submitQuiz()" data-lang="quiz_submit">Submit</button>
+    </form>
+
+    <div id="quizResult" class="mt-5"></div>
+</div>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 SanaSarmau Medical Center. All Rights Reserved.</p>
+        <p>123 Health St, Wellness City, Care Country</p>
+        <p>Email: contact@sanarsarmau.com | Phone: +123 456 7890</p>
+        <div class="social-icons">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="QUIZJS.js"></script>
+</body>
+</html>

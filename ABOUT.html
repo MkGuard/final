@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SanaSarmau Medical Center</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="ABOUTUS.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <img src="logo.jpg" alt="SanaSarmau Logo" class="navbar-logo">
+        <a class="nav-link active" href="index.html" data-lang="nav_home">Home</a>
+        <a class="nav-link" href="#" data-lang="nav_about">About</a>
+        <a class="nav-link" href="SERVICE.html" data-lang="nav_services">Services</a>
+        <a class="nav-link" href="CONTACT.html" data-lang="nav_contact">Contact</a>
+        <a class="nav-link" href="QUIZ.html" data-lang="nav_quiz">Quiz</a>
+      </ul>
+      <div class="navbar-nav">
+        <select id="languageSwitcher" class="custom-select">
+          <option value="en">English</option>
+          <option value="ru">Russian</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel Section -->
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="jr.jpg" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-lang="carousel_title_1" id="carousel_title_1">Our Journey</h5>
+            <p data-lang="carousel_content_1" id="carousel_content_1">Embark on a journey with us as we recount our humble beginnings and the remarkable milestones we've achieved over the years.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="team.jpg" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-lang="carousel_title_2" id="carousel_title_2">Our Team</h5>
+            <p data-lang="carousel_content_2" id="carousel_content_2">Meet the dedicated team behind our success - a diverse group of medical professionals committed to providing compassionate care to our patients.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="ach.jpg" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-lang="carousel_title_3"  id="carousel_title_3">Our Achievements</h5>
+            <p data-lang="carousel_content_3" id="carousel_content_3">Discover our achievements and contributions to the healthcare industry, from groundbreaking research to community outreach programs.</p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+
+<!-- Content Section -->
+<section class="content py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 data-lang="our_story_title" >Our Story</h2>
+                <p data-lang="our_story_content">We started as a small clinic in 1990, founded by Dr. Sana Sarmau. Over the years, we have grown into a leading medical center, serving thousands of patients every year. Our commitment to providing high-quality healthcare remains unwavering.</p>
+            </div>
+            <div class="col-md-6">
+                <h2 data-lang="our_vision_title">Our Vision</h2>
+                <p data-lang="our_vision_content">Our vision is to be the preferred healthcare provider in our community, known for excellence in patient care, medical education, and research.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 SanaSarmau Medical Center. All Rights Reserved.</p>
+        <p>123 Health St, Wellness City, Care Country</p>
+        <p>Email: contact@sanarsarmau.com | Phone: +123 456 7890</p>
+        <div class="social-icons">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="ABOUTJS.js"></script>
+</body>
+</html>

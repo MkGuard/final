@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanaSarmau Medical Center</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="HOMECSS.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <img src="logo.jpg" alt="SanaSarmau Logo" class="navbar-logo">
+                <a class="nav-link active" href="#" data-lang="nav_home">Home</a>
+                <a class="nav-link" href="ABOUT.html" data-lang="nav_about">About</a>
+                <a class="nav-link" href="SERVICE.html" data-lang="nav_services">Services</a>
+                <a class="nav-link" href="CONTACT.html" data-lang="nav_contact">Contact</a>
+                <a class="nav-link" href="QUIZ.html" data-lang="nav_quiz">Quiz</a>
+            </ul>
+            <div class="navbar-nav">
+                <select id="languageSwitcher" class="custom-select">
+                    <option value="en">English</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="container">
+        <h1 class="hero-title" data-lang="hero_title">Welcome to SanaSarmau Medical Center</h1>
+        <p class="hero-subtitle" data-lang="hero_subtitle">Your health is our priority</p>
+        <a href="#" class="btn btn-custom btn-lg" data-lang="hero_button">Learn More</a>
+    </div>
+</header>
+
+    <!-- Services Section -->
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-lang="services_title">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <i class="fas fa-stethoscope card-img-top text-center"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="service1_title">General Checkup</h5>
+                            <p class="card-text" data-lang="service1_desc">Comprehensive health checkups for all ages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <i class="fas fa-heartbeat card-img-top text-center"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="service2_title">Cardiology</h5>
+                            <p class="card-text" data-lang="service2_desc">Expert cardiac care for your heart health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <i class="fas fa-pills card-img-top text-center"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="service3_title">Pharmacy</h5>
+                            <p class="card-text" data-lang="service3_desc">Full-service pharmacy with prescription fulfillment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 SanaSarmau Medical Center. All Rights Reserved.</p>
+            <p>123 Health St, Wellness City, Care Country</p>
+            <p>Email: contact@sanarsarmau.com | Phone: +123 456 7890</p>
+            <div class="social-icons">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="HOMEJS.js"></script>
+</body>
+</html>
